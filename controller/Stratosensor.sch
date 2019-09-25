@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Stratosensor-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -70,7 +70,7 @@ U 1 1 5D4E2C65
 P 1350 2300
 F 0 "C1" V 1098 2300 50  0000 C CNN
 F 1 "12p" V 1189 2300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 1388 2150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1388 2150 50  0001 C CNN
 F 3 "~" H 1350 2300 50  0001 C CNN
 	1    1350 2300
 	0    1    1    0   
@@ -81,7 +81,7 @@ U 1 1 5D4E3023
 P 1350 2600
 F 0 "C2" V 1500 2600 50  0000 C CNN
 F 1 "12p" V 1600 2600 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 1388 2450 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1388 2450 50  0001 C CNN
 F 3 "~" H 1350 2600 50  0001 C CNN
 	1    1350 2600
 	0    1    1    0   
@@ -1091,7 +1091,7 @@ Wire Bus Line
 	6800 4600 6800 4650
 Connection ~ 6800 4650
 $Comp
-L MCU_Microchip_ATmega:ATmega1284-PU U1
+L Stratosensor-rescue:ATmega1284-PU-MCU_Microchip_ATmega U1
 U 1 1 5D4D949A
 P 2700 3850
 F 0 "U1" H 2900 1850 50  0000 C CNN
@@ -1333,11 +1333,13 @@ Entry Bus Bus
 Wire Bus Line
 	8350 2050 8350 1650
 Wire Bus Line
-	8350 1650 7350 1650
-Wire Bus Line
 	7350 1650 7350 1350
 Wire Bus Line
 	7350 1350 3700 1350
+Entry Bus Bus
+	7800 1650 7900 1550
+Wire Bus Line
+	7350 1650 8350 1650
 Wire Bus Line
 	8450 4150 8450 4650
 Wire Bus Line
@@ -1366,6 +1368,4 @@ Wire Bus Line
 	3750 3000 3750 3650
 Wire Bus Line
 	3700 1350 3700 2750
-Entry Bus Bus
-	7800 1650 7900 1550
 $EndSCHEMATC

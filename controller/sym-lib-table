@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ublox)(type Legacy)(uri ${KIPRJMOD}/ublox.lib)(options "")(descr ""))
+  (lib (name Stratosensor-rescue)(type Legacy)(uri ${KIPRJMOD}/Stratosensor-rescue.lib)(options "")(descr ""))
 )
